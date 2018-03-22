@@ -7,13 +7,14 @@
 //
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     cout << "input a & b & c\n";
-    int a,b,c;
+    double a,b,c;
     cin >> a >> b >> c;
-    cout << "b^2-4ac=" << b*b-4*a*c << endl;
+    cout << "b^2-4ac=" << fixed << setprecision(2) << b*b-4*a*c << endl;
     return 0;
 }
